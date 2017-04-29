@@ -873,7 +873,7 @@ deploy_key_rsa</code></pre>
 
 </p>
 
-<h4>配置别名</h4>
+<h4>24 配置别名</h4>
 
 <p>为部分命令配置别名，操作时直接使用别名。
 
@@ -899,13 +899,13 @@ $ git config --global alias.br branch</code></pre>
 </p>
 <pre><code>$ git config --global alias.lg "log --color --graph 
 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit"</code></pre>
-<p>24.2 配置文件
+<p>24.1 通过修改配置文件修改别名
 
 </p>
 <p>配置Git的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。
 
 </p>
-<p>24.1 当前仓库的Git配置文件
+<p>24.1.1 当前仓库的Git配置文件
 
 </p>
 <p>每个仓库的Git配置文件都放在.git/config文件中：
@@ -929,7 +929,7 @@ $ git config --global alias.br branch</code></pre>
     merge = refs/heads/master
 [alias]
     last = log -1</code></pre>
-<p>24.2 当前用户的Git配置文件
+<p>24.1.2 当前用户的Git配置文件
 
 </p>
 <p>当前用户的Git配置文件放在用户主目录下的一个隐藏文件.gitconfig中：
